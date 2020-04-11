@@ -1,0 +1,11 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name:  my-craptacular-web-service
+spec:
+  selector:
+    app:  nginx
+  ports:
+  - name:  tcp
+    port:  32768
+    targetPort:  80

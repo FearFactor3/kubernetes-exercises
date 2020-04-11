@@ -1,0 +1,11 @@
+kind: Service
+apiVersion: v1
+metadata:
+  name:  my-craptacular-db-service
+spec:
+  selector:
+    app: db
+  ports:
+  - name:  tcp
+    port: 3306
+    targetPort: 8057
